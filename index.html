@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h3 id="title">NCDC form for incoming Covid-19 patient</h3>
+        </header>
+        <br>
+
+        <div class="border">
+            <form action="" autocomplete="off" onsubmit="event.preventDefault(); onFormSubmit();">
+                <label for="first-name"> First Name: </label>
+                <input type="text" class="input" id="fname">
+                <br> <br>
+                <label for="last-name"> Last Name: </label>
+                <input type="text" class="input" id="lname">
+                <br> <br>
+                <label for="email"> Email Address: </label>
+                <input type="text" class="input" id="email">
+                <br> <br>
+                <label for="gender"> Gender: </label>
+                <select name="" id="gender"> 
+                    <option value="none" selected disabled hidden>Male, Female</option>
+                    <option value="Male" >Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <br> <br>
+               <input type="checkbox" id="check">
+               <span>Recently came in to Nigeria within the last 14 days? </span>
+               <br> <br>
+               <button type="submit" id="submit">Submit</button>
+            </form>
+           
+            <br> <br>
+            <div class="overflow">
+                <table class="table" id="patient-list">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Email Address</th>
+                            <th>Gender</th>
+                            <th>Recently came to Nigeria in last 14days?</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div> 
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</body>
+</html>

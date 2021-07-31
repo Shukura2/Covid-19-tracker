@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(204, 197, 204);
+}
+#title{
+    color: white;
+    text-align: center;
+    font: 2em bold;
+}
+.header{
+    background-color: green;
+    padding: 1.1em;
+}
+.border{
+    width: 80vw;
+    margin: auto;
+    border: 1px solid black;
+    padding: 1em;
+}
+.input{
+    width: 60%;
+    height: 1.7em;
+    border: none;
+}
+.table{
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+.overflow{
+    overflow-x: auto;
+}
+#fname, #lname{
+    margin-left: 2.9%;
+}
